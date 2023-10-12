@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: #000;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#prevButton {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nextButton {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+svg {
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+    color: #007aff
+}
+
+.disabled {
+    color: #6ba3df !important;
+    cursor: default;
+}
